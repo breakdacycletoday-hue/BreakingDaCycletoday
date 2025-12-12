@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break Da Cycle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .list-block {
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #555;
+    }
+    .cta {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      padding: 15px 20px;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Break Da Cycle</h1>
+  <p>A simple path to rebuild your life through small steps, daily honesty, and forward movement at your own pace.</p>
+</header>
+
+<section>
+  <h2>How It Started</h2>
+  <p>You planned to do cardio inside the house. It felt safe but not like real change. So you left the house, headed to the gym, and saw the sunlight across Freeman Lake. That moment shifted everything. A walk became a jog. A jog became a run. A run became clarity. This is where Break Da Cycle was born.</p>
+</section>
+
+<section>
+  <h2>The Hourglass Rule</h2>
+  <p>Time is passing either way. You do not control the sand. You control what you do while it falls. Break Da Cycle is played in 30 minute rounds. One honest action. One small improvement. One step forward.</p>
+</section>
+
+<section>
+  <h2>Create Your List</h2>
+  <p>Start by writing what you want to improve. Nothing is too small. Nothing is too simple. Your list is a map of the life you want to build.</p>
+
+  <div class="list-block">
+    <ul>
+      <li>Read for 15 to 30 minutes</li>
+      <li>Call someone you care about</li>
+      <li>Write a page or a story</li>
+      <li>Grow a flower or plant</li>
+      <li>Meditate or stretch</li>
+      <li>Train your dog</li>
+      <li>Practice an instrument</li>
+      <li>Move your body at your pace</li>
+    </ul>
+  </div>
+
+  <p>Once you have your list, choose one item and take a 30 minute step forward.</p>
+</section>
+
+<section>
+  <h2>The Freeman Lake Lesson</h2>
+  <p>You realized something important during that first run. You do not need to move like your younger self. You only need to move at your pace. Even when you got lost, even when you ran farther than planned, the lesson stayed the same: forward is enough.</p>
+</section>
+
+<section>
+  <h2>Your First Mission</h2>
+  <p>Pick one thing from your list. Set a 30 minute timer. Move toward your goal. When time ends, you have succeeded for the day. Break Da Cycle is won through consistency, not intensity.</p>
+  <a class="cta" href="#">Start Your 30 Minute Cycle</a>
+</section>
+
+<footer>
+  <p>Break Da Cycle · One step at your pace</p>
+</footer>
+
+</body>
+</html>

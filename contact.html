@@ -1,29 +1,43 @@
-<html>
+<html lang="en">
 <head>
-<style>
-body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#222; }
-header { background: linear-gradient(135deg, #1a1a1a, #2b4a5a); color:#fff; padding:25px 20px; text-align:center; }
-nav { background:#1a1a1a; padding:10px; text-align:center; }
-nav a { color:#fff; margin:0 15px; text-decoration:none; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:900px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Break Da Cycle</title>
+  <style>
+    :root{ --ink:#1a1a1a; --ink2:#2b4a5a; --bg:#f4f4f4; --card:#fff; --shadow:0 10px 28px rgba(0,0,0,0.08); --radius:12px; }
+    body{ margin:0; font-family:Arial, sans-serif; background:var(--bg); color:#222; line-height:1.65; }
+    header{ background:linear-gradient(135deg,var(--ink),var(--ink2)); color:#fff; padding:26px 20px; text-align:center; }
+    header h1{ margin:0; font-size:2rem; }
+    nav{ background:rgba(26,26,26,0.98); padding:12px 10px; text-align:center; position:sticky; top:0; z-index:10; }
+    nav a{ color:#fff; margin:0 14px; text-decoration:none; opacity:0.95; white-space:nowrap; }
+    nav a:hover{ text-decoration:underline; opacity:1; }
+    .wrap{ max-width:980px; margin:0 auto; padding:18px 14px 60px 14px; }
+    section{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 22px; margin-top:18px; }
+    h2{ margin:0 0 10px 0; font-size:1.45rem; }
+    .box{ background:#f7f7f7; border:1px solid rgba(0,0,0,0.06); border-radius:10px; padding:18px; }
+  </style>
 </head>
 <body>
-<header><h1>Contact · Break Da Cycle</h1></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="game.html">The Game</a>
-<a href="missions.html">Missions</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-<section>
-<h2>Join the Movement</h2>
-<p>If you want to share your journey, collaborate, or ask questions, this space will expand with tools soon.</p>
-<p>Email placeholder: youremail@example.com</p>
-<p>A QR code and contact form will be added in future updates.</p>
-</section>
+  <header><h1>Contact · Break Da Cycle</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="game.html">The Game</a>
+    <a href="missions.html">Missions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <h2>Join the Movement</h2>
+      <div class="box">
+        <p>This page can be your connection point for collaboration, stories, and support.</p>
+        <p>When you are ready, replace the placeholder with your real email or add a simple form.</p>
+        <p>Email placeholder: youremail@example.com</p>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

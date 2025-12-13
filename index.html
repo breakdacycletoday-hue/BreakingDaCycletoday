@@ -1,143 +1,238 @@
-<html>
+<html lang="en">
 <head>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
-  }
-  header {
-    background: linear-gradient(135deg, #1a1a1a, #2b4a5a);
-    color: #fff;
-    padding: 25px 20px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  nav {
-    background: #1a1a1a;
-    padding: 12px;
-    text-align: center;
-  }
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
-  }
-  h2 {
-    margin-top: 0;
-  }
-  .list-block {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  .cta {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    padding: 15px 20px;
-    background: #1a1a1a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-  .cta:hover {
-    opacity: 0.85;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break Da Cycle</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --ink:#1a1a1a;
+      --ink2:#2b4a5a;
+      --bg:#f4f4f4;
+      --card:#ffffff;
+      --soft:#f7f7f7;
+      --shadow: 0 10px 28px rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      line-height:1.65;
+    }
+
+    header{
+      background: linear-gradient(135deg, var(--ink), var(--ink2));
+      color:#fff;
+      padding: 34px 20px 22px 20px;
+      text-align:center;
+    }
+    header h1{
+      margin:0;
+      font-size:2.6rem;
+      letter-spacing:0.2px;
+    }
+    .header-quote{
+      margin: 10px auto 0 auto;
+      max-width: 980px;
+      font-family: "Pacifico", cursive;
+      font-size: 1.35rem;
+      opacity: 0.9;
+    }
+
+    nav{
+      background: rgba(26,26,26,0.98);
+      padding: 12px 10px;
+      text-align:center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a{
+      color:#fff;
+      margin: 0 14px;
+      text-decoration:none;
+      font-size:1rem;
+      opacity:0.95;
+      white-space: nowrap;
+    }
+    nav a:hover{
+      text-decoration: underline;
+      opacity: 1;
+    }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px 14px 60px 14px;
+    }
+
+    section{
+      background:var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px 22px;
+      margin-top: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    h2{
+      margin: 0 0 10px 0;
+      font-size: 1.45rem;
+      color: #141414;
+    }
+
+    .quote-break{
+      text-align:center;
+      padding: 30px 16px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(43,74,90,0.10), rgba(255,255,255,0.0));
+      box-shadow: none;
+    }
+    .quote-break .big-quote{
+      font-family: "Pacifico", cursive;
+      font-size: 2.1rem;
+      line-height: 1.25;
+      color: #203845;
+      margin: 0;
+    }
+    .quote-break .sub{
+      margin: 10px auto 0 auto;
+      max-width: 760px;
+      color: #3d3d3d;
+      font-size: 1rem;
+      opacity: 0.95;
+    }
+
+    .list-block{
+      background: var(--soft);
+      padding: 18px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .list-block ul{
+      margin: 0;
+      padding-left: 18px;
+    }
+    .list-block li{
+      margin: 8px 0;
+    }
+
+    .cta{
+      display: inline-block;
+      text-align:center;
+      margin-top: 14px;
+      padding: 14px 18px;
+      background: var(--ink);
+      color:#fff;
+      text-decoration:none;
+      border-radius: 10px;
+      opacity: 0.98;
+    }
+    .cta:hover{ opacity: 0.88; }
+
+    /* Hourglass watermark section */
+    .hourglass-watermark::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image: url('hourglass.png');
+      background-size: 520px auto;
+      background-repeat: no-repeat;
+      background-position: right 18px center;
+      opacity: 0.10;
+      pointer-events: none;
+      filter: saturate(0.9) contrast(1.05);
+    }
+    .hourglass-watermark .content{
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 720px){
+      header h1{ font-size: 2.15rem; }
+      .header-quote{ font-size: 1.2rem; }
+      .quote-break .big-quote{ font-size: 1.7rem; }
+      nav a{ margin: 0 10px; font-size: 0.98rem; }
+      section{ padding: 28px 18px; }
+      .hourglass-watermark::before{
+        background-size: 380px auto;
+        background-position: center 18px;
+        opacity: 0.08;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>Break Da Cycle</h1>
+    <div class="header-quote">Be your true self that you always dreamed of becoming</div>
+  </header>
 
-<header>
-  <h1>Break Da Cycle</h1>
-  <p>A simple path to rebuild your life through small steps, daily honesty, and forward movement at your own pace.</p>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="game.html">The Game</a>
+    <a href="missions.html">Missions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
- <div class="hourglass-banner"></div>
+  <div class="wrap">
 
-<style>
-.hourglass-banner {
-  width: 100%;
-  height: 320px;
-  background-image: url('hourglass.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-bottom: 4px solid #1a1a1a;
-}
-@media (max-width: 600px) {
-  .hourglass-banner {
-    height: 220px;
-  }
-}
-</style> 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="game.html">The Game</a>
-  <a href="missions.html">Missions</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <section>
+      <h2>How It Started</h2>
+      <p>You planned to do cardio inside the house. It felt safe but not like real change. So you headed toward the gym, saw the sunlight across Freeman Lake, and followed the day instead. It began as a walk. If it didn’t hurt too much, maybe a small run. The walk became a jog. The jog became a run. That simple shift became clarity.</p>
+    </section>
 
-<section>
-  <h2>How It Started</h2>
-  <p>You planned to do cardio inside the house. It felt safe but not like real change. So you left the house, headed to the gym, and saw the sunlight across Freeman Lake. That moment shifted everything. A walk became a jog. A jog became a run. A run became clarity. This is where Break Da Cycle was born.</p>
-</section>
+    <section class="quote-break">
+      <p class="big-quote">Be your true self that you always dreamed of becoming</p>
+      <p class="sub">Not perfect. Not rushed. Just forward, at your pace, starting with one honest step today.</p>
+    </section>
 
-<section>
-  <h2>The Hourglass Rule</h2>
-  <p>Time is passing either way. You do not control the sand. You control what you do while it falls. Break Da Cycle is played in 30 minute rounds. One honest action. One small improvement. One step forward.</p>
-</section>
+    <section class="hourglass-watermark">
+      <div class="content">
+        <h2>The Hourglass Rule</h2>
+        <p>Time is passing either way. The goal isn’t to stop it. The goal is to add small actions that move you forward. Break Da Cycle is played in 30 minute rounds. One honest action. One small improvement. One step in the direction of your dream.</p>
+      </div>
+    </section>
 
-<section>
-  <h2>Create Your List</h2>
-  <p>Start by writing what you want to improve. Nothing is too small. Nothing is too simple. Your list is a map of the life you want to build.</p>
+    <section>
+      <h2>Create Your List</h2>
+      <p>Start by writing what you want to improve. Nothing is too small. Your list becomes a map of the life you want to build.</p>
 
-  <div class="list-block">
-    <ul>
-      <li>Read for 15 to 30 minutes</li>
-      <li>Call someone you care about</li>
-      <li>Write a page or a story</li>
-      <li>Grow a flower or plant</li>
-      <li>Meditate or stretch</li>
-      <li>Train your dog</li>
-      <li>Practice an instrument</li>
-      <li>Move your body at your pace</li>
-    </ul>
+      <div class="list-block">
+        <ul>
+          <li>Read for 15 to 30 minutes</li>
+          <li>Call someone you care about</li>
+          <li>Write a page or a story</li>
+          <li>Grow a flower or plant</li>
+          <li>Meditate or stretch</li>
+          <li>Train your dog</li>
+          <li>Practice an instrument</li>
+          <li>Move your body at your pace</li>
+        </ul>
+      </div>
+
+      <p>Once you have your list, choose one item and take a 30 minute step forward.</p>
+    </section>
+
+    <section>
+      <h2>The Freeman Lake Lesson</h2>
+      <p>You do not need to move like your younger self. You only need to move at your pace. Even when you get turned around, you can slow down, reset, and keep going. That simple idea applies to the whole life. The goal is not speed. The goal is direction.</p>
+    </section>
+
+    <section>
+      <h2>Your First Mission</h2>
+      <p>Pick one thing from your list. Set a 30 minute timer. Move toward it. When time ends, you succeeded for the day. Consistency is the win condition.</p>
+      <a class="cta" href="game.html">Start Your 30 Minute Cycle</a>
+    </section>
+
   </div>
-
-  <p>Once you have your list, choose one item and take a 30 minute step forward.</p>
-</section>
-
-<section>
-  <h2>The Freeman Lake Lesson</h2>
-  <p>You realized something important during that first run. You do not need to move like your younger self. You only need to move at your pace. Even when you got lost, even when you ran farther than planned, the lesson stayed the same: forward is enough.</p>
-</section>
-
-<section>
-  <h2>Your First Mission</h2>
-  <p>Pick one thing from your list. Set a 30 minute timer. Move toward your goal. When time ends, you have succeeded for the day. Break Da Cycle is won through consistency, not intensity.</p>
-  <a class="cta" href="game.html">Start Your 30 Minute Cycle</a>
-</section>
-
 </body>
 </html>

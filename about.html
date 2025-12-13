@@ -1,30 +1,43 @@
-<html>
+<html lang="en">
 <head>
-<style>
-body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#222; }
-header { background: linear-gradient(135deg, #1a1a1a, #2b4a5a); color:#fff; padding:25px 20px; text-align:center; }
-nav { background:#1a1a1a; padding:10px; text-align:center; }
-nav a { color:#fff; margin:0 15px; text-decoration:none; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:900px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About · Break Da Cycle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root{ --ink:#1a1a1a; --ink2:#2b4a5a; --bg:#f4f4f4; --card:#fff; --shadow:0 10px 28px rgba(0,0,0,0.08); --radius:12px; }
+    body{ margin:0; font-family:Arial, sans-serif; background:var(--bg); color:#222; line-height:1.65; }
+    header{ background:linear-gradient(135deg,var(--ink),var(--ink2)); color:#fff; padding:26px 20px; text-align:center; }
+    header h1{ margin:0; font-size:2rem; }
+    nav{ background:rgba(26,26,26,0.98); padding:12px 10px; text-align:center; position:sticky; top:0; z-index:10; }
+    nav a{ color:#fff; margin:0 14px; text-decoration:none; opacity:0.95; white-space:nowrap; }
+    nav a:hover{ text-decoration:underline; opacity:1; }
+    .wrap{ max-width:980px; margin:0 auto; padding:18px 14px 60px 14px; }
+    section{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 22px; margin-top:18px; }
+    h2{ margin:0 0 10px 0; font-size:1.45rem; }
+    .accent-quote{ font-family:"Pacifico", cursive; font-size:1.55rem; color:#203845; margin: 10px 0 0 0; }
+  </style>
 </head>
 <body>
-<header><h1>About · Break Da Cycle</h1></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="game.html">The Game</a>
-<a href="missions.html">Missions</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-<section>
-<h2>Your Story</h2>
-<p>This journey began with a simple moment. A walk that became a jog. A jog that became clarity. Break Da Cycle started the moment you realized you had waited too long to take care of yourself and your dreams.</p>
-<p>Your transformation came from discipline, recovery, humor, mistakes, and reflection. At Freeman Lake, you learned that you do not need to move like the man you once were. You only need to move at your pace. Consistently. Intentionally.</p>
-<p>The second shift came in the shower, during a long meditation. You reflected on your life, your purpose, and how you wanted to help others while caring for your own health, mind, and faith. You drew an hourglass on the mirror as a reminder that time is always passing. The goal is not to stop it, but to fill it with meaningful actions.</p>
-<p>From these moments, Break Da Cycle was born.</p>
-</section>
+  <header><h1>About · Break Da Cycle</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="game.html">The Game</a>
+    <a href="missions.html">Missions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <h2>Your Story</h2>
+      <p>Break Da Cycle came from real life. Pain, pressure, and that quiet moment where you realize you do not want to keep heading the same direction.</p>
+      <p>The Freeman Lake day started practical. You needed cardio. The house felt like no change. You headed toward the gym, saw a beautiful day, bypassed the building, and started walking. The walk became a jog. The jog became a run. You learned you can move at your pace and still move forward.</p>
+      <p>The other turning point came during a long shower meditation. You re-centered on purpose, faith, and taking care of your health and mind so you can help others without burning out. The hourglass became the reminder. Time is passing. So fill it with actions that matter.</p>
+      <p class="accent-quote">Be your true self that you always dreamed of becoming</p>
+    </section>
+  </div>
 </body>
 </html>

@@ -1,33 +1,47 @@
-<html>
+<html lang="en">
 <head>
-<style>
-body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#222; }
-header { background: linear-gradient(135deg, #1a1a1a, #2b4a5a); color:#fff; padding:25px 20px; text-align:center; }
-nav { background:#1a1a1a; padding:10px; text-align:center; }
-nav a { color:#fff; margin:0 15px; text-decoration:none; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:900px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery · Break Da Cycle</title>
+  <style>
+    :root{ --ink:#1a1a1a; --ink2:#2b4a5a; --bg:#f4f4f4; --card:#fff; --shadow:0 10px 28px rgba(0,0,0,0.08); --radius:12px; }
+    body{ margin:0; font-family:Arial, sans-serif; background:var(--bg); color:#222; line-height:1.65; }
+    header{ background:linear-gradient(135deg,var(--ink),var(--ink2)); color:#fff; padding:26px 20px; text-align:center; }
+    header h1{ margin:0; font-size:2rem; }
+    nav{ background:rgba(26,26,26,0.98); padding:12px 10px; text-align:center; position:sticky; top:0; z-index:10; }
+    nav a{ color:#fff; margin:0 14px; text-decoration:none; opacity:0.95; white-space:nowrap; }
+    nav a:hover{ text-decoration:underline; opacity:1; }
+    .wrap{ max-width:980px; margin:0 auto; padding:18px 14px 60px 14px; }
+    section{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 22px; margin-top:18px; }
+    h2{ margin:0 0 10px 0; font-size:1.45rem; }
+    .note{ background:#f7f7f7; border:1px solid rgba(0,0,0,0.06); border-radius:10px; padding:18px; }
+  </style>
 </head>
 <body>
-<header><h1>Gallery · Break Da Cycle</h1></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="game.html">The Game</a>
-<a href="missions.html">Missions</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-<section>
-<h2>Photo Moments</h2>
-<p>Each moment represents a step forward. These images symbolize your transformation.</p>
-<ul>
-<li><strong>The Run at Freeman Lake:</strong> Learning to move at your own pace.</li>
-<li><strong>The Mirror Hourglass:</strong> Time is passing, fill it with intention.</li>
-<li><strong>The Reflection:</strong> Choosing honesty as the starting point.</li>
-<li><strong>The Bench:</strong> Rest is part of growth.</li>
-</ul>
-</section>
+  <header><h1>Gallery · Break Da Cycle</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="game.html">The Game</a>
+    <a href="missions.html">Missions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <h2>Moments That Mark the Change</h2>
+      <div class="note">
+        <p>This page can hold your photos with short meanings under each one. When you are ready, upload images into the repo and we can place them here cleanly.</p>
+        <ul>
+          <li>The Run at Freeman Lake: learning to move at your pace</li>
+          <li>The Mirror Hourglass: time is passing, so act with intention</li>
+          <li>The Reflection: choosing honesty as the start</li>
+          <li>The Bench: rest is part of growth</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

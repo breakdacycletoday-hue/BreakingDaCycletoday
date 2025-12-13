@@ -1,49 +1,87 @@
-<html>
+<html lang="en">
 <head>
-<style>
-body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#222; }
-header { background: linear-gradient(135deg, #1a1a1a, #2b4a5a); color:#fff; padding:25px 20px; text-align:center; }
-nav { background:#1a1a1a; padding:10px; text-align:center; }
-nav a { color:#fff; margin:0 15px; text-decoration:none; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:900px; margin:auto; background:#fff; margin-top:20px; border-radius:8px; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions · Break Da Cycle</title>
+  <style>
+    :root{ --ink:#1a1a1a; --ink2:#2b4a5a; --bg:#f4f4f4; --card:#fff; --shadow:0 10px 28px rgba(0,0,0,0.08); --radius:12px; }
+    body{ margin:0; font-family:Arial, sans-serif; background:var(--bg); color:#222; line-height:1.65; }
+    header{ background:linear-gradient(135deg,var(--ink),var(--ink2)); color:#fff; padding:26px 20px; text-align:center; }
+    header h1{ margin:0; font-size:2rem; }
+    nav{ background:rgba(26,26,26,0.98); padding:12px 10px; text-align:center; position:sticky; top:0; z-index:10; }
+    nav a{ color:#fff; margin:0 14px; text-decoration:none; opacity:0.95; white-space:nowrap; }
+    nav a:hover{ text-decoration:underline; opacity:1; }
+    .wrap{ max-width:980px; margin:0 auto; padding:18px 14px 60px 14px; }
+    section{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 22px; margin-top:18px; }
+    h2{ margin:0 0 10px 0; font-size:1.45rem; }
+    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card{ background:#f7f7f7; border:1px solid rgba(0,0,0,0.06); border-radius:10px; padding:18px; }
+    @media (max-width: 760px){ .grid{ grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
-<header><h1>Missions · Break Da Cycle</h1></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="game.html">The Game</a>
-<a href="missions.html">Missions</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-<section>
-<h2>Beginner Missions</h2>
-<ul>
-<li>Walk for ten minutes</li>
-<li>Read for fifteen minutes</li>
-<li>Call someone you care about</li>
-<li>Meditate or stretch</li>
-<li>Write one page</li>
-</ul>
-<h2>Intermediate Missions</h2>
-<ul>
-<li>Practice a skill for thirty minutes</li>
-<li>Organize a space in your home</li>
-<li>Do a light workout</li>
-<li>Cook a meal with intention</li>
-<li>Journal about goals</li>
-</ul>
-<h2>Soul-Level Missions</h2>
-<ul>
-<li>Spend time in nature with no distractions</li>
-<li>Have a meaningful conversation</li>
-<li>Write down one fear and one dream</li>
-<li>Practice silence or prayer</li>
-<li>Do something kind without expecting anything</li>
-</ul>
-</section>
+  <header><h1>Missions · Break Da Cycle</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="game.html">The Game</a>
+    <a href="missions.html">Missions</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <h2>Daily Missions</h2>
+      <p>Pick one mission for your 30 minute cycle. Modify it to your pace when needed.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Beginner</h3>
+          <ul>
+            <li>Walk for ten minutes, then stretch</li>
+            <li>Read for fifteen minutes</li>
+            <li>Call someone you care about</li>
+            <li>Meditate or breathe for ten minutes</li>
+            <li>Write one page</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Intermediate</h3>
+          <ul>
+            <li>Practice a skill for thirty minutes</li>
+            <li>Organize one space in your home</li>
+            <li>Do a light workout with intention</li>
+            <li>Cook a simple meal with focus</li>
+            <li>Journal about goals and next steps</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Soul Level</h3>
+          <ul>
+            <li>Spend time in nature with no distractions</li>
+            <li>Have a meaningful conversation</li>
+            <li>Write down one fear and one dream</li>
+            <li>Prayer, silence, or meditation</li>
+            <li>Do something kind without announcing it</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Create Your Own</h3>
+          <ul>
+            <li>What cycle am I breaking today</li>
+            <li>What is one small step forward I can take</li>
+            <li>How can I make it doable at my pace</li>
+            <li>How can I track the win</li>
+            <li>Who can I share progress with</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
